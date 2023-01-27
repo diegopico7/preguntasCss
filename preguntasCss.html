@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas CSs</title>
+</head>
+
+<body>
+  <h1>Preguntas entrevistas CSS</h1>
+
+  <dl>
+    <dt>1- Que es CSS</dt>
+    <dd>Cascading style sheep = estilos en cascada, sirve para darle formato y estilos a una página o proyecto web</dd>
+    <dt>2- Selectores básicos en CSS</dt>
+    <dd>Selectores básicos : por tag (etiqueta), por id (#), por classes (.), universal (*), atrubutos ( [ ] )</dd>
+    <dt>3- Como trabaja el algoritmo de css</dt>
+    <dd>El algoritmo de css trabaja de 3 maneras : </dd>
+    <dd> 1- Cascada mecanismo con el que el navegador aplica los estilos</dd>
+    <dd>2- Especificidad: peso que tienen los selectores cuando hay conflictos de estulos</dd>
+    <dd>Herencia: capacidad de los selectores de obtener (heredar) valores de sus ancestros mas cercanos</dd>
+
+    <dt>4- Para que sirven las media query en css</dt>
+    <dd>Las medias quearys nos facilitan adaptar nuestro proyecto para diferentes dispositivos, ejemplo celular,
+      monitor, tablet etc...</dd>
+
+    <dt>5- Posicionamiento en CSS</dt>
+    <dd>Determina como un elemento es posicionado en el documento, las propiedades top, rigth, botton, left determinan
+      la ubicacion final de los elementos posicionados</dd>
+
+    <dt>6- Tipos de posicionamiento en css</dt>
+    <ul>
+      <li>Static = posicionamiento por defecto, y se posiciona en el flujo normal del documento</li>
+      <li>Relative = ocupa su espacio en el documento, el elemento es posicionado relativo a su posicion normal, y con
+        las propiedades top , right, bottom, left podemos moverlo, al moverlo el elemento conseva su espacio reservado
+      </li>
+      <li>Absolule = se posiciona respecto al ancestro mas cercano que tambien este posicionado, si no hay ninguno toma
+        al viewport como referencia, pierde su espacio en el flujo del documento y los elementos posicionados absolute
+        pueden moverse y superponerse sobre otros elementos</li>
+      <li>Fixed= el elemento se posiciona en forma fija y respecto al viewport, y ojo que puede tapar otros elementos,
+        al hacer scroll este seguira fijo en la pantalla, ocupa solo el espacio de su contenido a menos que le demos
+        nosotros valores a width y height</li>
+      <li>Sticky= puede considerarse un intermedio entre relativo y fixed, se utiliza cuando queremos que un elemento se
+        posicione en un lugar especifico, y que cuando lleguemos a ese elemento se quede en forma fija, las propiedades
+        top, right, bottom, left no se usan para mover el elemento, si no que se usan para indicar en que punto el
+        elemento tendra un compratamiento diferente, antes de llegar a ese punto el elemento va a comportarse de manera
+        natural</li>
+    </ul>
+
+
+    <dt>6- Nombre las pseudoclases mas usadas</dt>
+    <dd>hover, required, visited, focus</dd>
+
+    <dt>7- Nombre los pseudoelementos</dt>
+    <ul>
+      <li>::after</li>
+      <li>::before</li>
+      <li>::first-letter</li>
+      <li>::first-line</li>
+      <li>::selection</li>
+      <li>::placeholder</li>
+    </ul>
+
+
+
+    <dt>8- Para que sirve Z-index</dt>
+    <dd>Cuando los elementos se colocan fuera del flujo normal pueden superponerse unos con otros, aqui podemos usar el
+      z-index para especificar el orden de apilamiento (Stacking context) en el eje z, es decir definimos cual elemento
+      quedara colocado enfrente o detras de otro elemento.</dd>
+
+    <dt>9- Unidades en Css</dt>
+    <dd>Absolutas o reales </dd>
+    <ul>
+      <li>centímetros(cm)</li>
+      <li>milímetros(ml)</li>
+      <li>pixeles (px)</li>
+      <li>pulgadas (in)</li>
+      <li>puntos(pt)</li>
+      <li>cuartos de milímetros(q)</li>
+      <li>Picas(Pi)</li>
+    </ul>
+    <dd>Relativas</dd>
+    <ul>
+      <li>rem (relativa al tamaño de la fuente del elemento raiz (html)) por defecto el html = 16px entonces 1rem = 16px
+      </li>
+      <li>em (relativa al tamaño de la fuente del elemento padre</li>
+      <li>ex (basada en la altura de la "x" en minuscula de la fuente del elemento</li>
+      <li>cap(basada en la altura de las letras mayúsculas de la fuente actual del elemento</li>
+      <li>ch(basada en la anchura del glifo "0" de la letra del elemento</li>
+      <li>lh(altura de linea del elemento</li>
+      <li>rlh altura de linea del elemento raiz</li>
+      <dd>Relativas al viewport</dd>
+      <li>vw viewport width relativa al ancho del viewport va de 1- 100</li>
+      <li>vh viewport height relativa al alto del viewport va de 1 -100</li>
+      <li>vmax entre vw y vh toma el que tenga el mayor valor</li>
+      <li>vmin entre vw y vh toma el que tengo el menor valor</li>
+
+      <dt>10- Propiedad display en css</dt>
+      <dd>block = ocupan todo el espacio a lo ancho del contenedor y generan salto de línea</dd>
+      <dd>inline = ocupan el espacio segun su contenido, no generan saltos de línea, no admiten dimensiones width y
+        height</dd>
+      <dd>inline-block = un intermedio entre block e inline no ocupa todo el ancho disponible y se le puede dar
+        dimensiones width y height</dd>
+      <dd>none = oculta el elemento, por lo que no ocupara ningun espacio. solo oculta no se borra el elemento</dd>
+      <dd>flex = cajas flexibles ideal para maquetar componentes, es unidemensional se trabaja solo con 1 columna o 1
+        fila </dd>
+      <dd>Grid = para maquetar layout, es bidimensional podemos trabajar con varias columnas o filas a la vez</dd>
+
+
+
+
+
+
+
+
+
+
+    </ul>
+
+
+
+  </dl>
+
+
+
+</body>
+
+</html>
