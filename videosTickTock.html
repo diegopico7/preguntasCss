@@ -15,22 +15,18 @@
   <dd>Cascading style sheep = estilos en cascada, sirve para darle formato y estilos a una página o proyecto web</dd>
   <dt>2- Selectores básicos en CSS</dt>
   <dd>Selectores básicos : por tag (etiqueta), por id (#), por classes (.), universal (*), atrubutos ( [ ] )</dd>
-  <dt>3- Como trabaja el algoritmo de css</dt>
-  <dd>El algoritmo de css trabaja de 3 maneras : </dd>
-  <dd> 1- Cascada mecanismo con el que el navegador aplica los estilos</dd>
-  <dd>2- Especificidad: peso que tienen los selectores cuando hay conflictos de estulos</dd>
-  <dd>Herencia: capacidad de los selectores de obtener (heredar) valores de sus ancestros mas cercanos</dd>
 
-  <dt>4- Para que sirven las media query en css</dt>
+
+  <dt>3- Para que sirven las media query en css</dt>
   <dd>Las medias quearys nos facilitan adaptar nuestro proyecto para diferentes dispositivos, ejemplo celular,
     monitor, tablet etc...</dd>
 
-  <dt>5- Para que sirve Z-index</dt>
+  <dt>4- Para que sirve Z-index</dt>
   <dd>Cuando los elementos se colocan fuera del flujo normal pueden superponerse unos con otros, aqui podemos usar el
     z-index para especificar el orden de apilamiento (Stacking context) en el eje z, es decir definimos cual elemento
     quedara colocado enfrente o detras de otro elemento.</dd>
 
-  <dt>11- Modelo de caja en css</dt>
+  <dt>5- Modelo de caja en css</dt>
   <dd>Todos los elementos en css son cajas rectangulares</dd>
   <dd>El modelo de caja consta de 4 áreas </dd>
   <ul>
@@ -48,13 +44,18 @@
   <dd>Herencia: capacidad de los selectores de obtener (heredar) valores de sus ancestros mas cercanos</dd>
 
   <dt>2- Nombre las pseudoclases mas usadas</dt>
+  <dd>
+    Dan estilos dependiendo del contexto posicion o estado del elemento se identifica con un :</dd>
   <dd>hover, required, visited, focus</dd>
 
   <dt>3- Nombre los pseudoelementos</dt>
+  <dd>van a dar estilo a una parte especifica del elemento se identifican con ::</dd>
   <ul>
     <li>::after</li>
     <li>::before</li>
     <li>::first-letter</li>
+    <li>::first-child</li>
+    <li>::last-child</li>
     <li>::first-line</li>
     <li>::selection</li>
     <li>::placeholder</li>
@@ -63,7 +64,8 @@
   <dt>4- Unidades en Css</dt>
   <dd>Absolutas o reales </dd>
   <ul>
-    <li>centímetros(cm)</li>
+    <li>centímetr
+      os(cm)</li>
     <li>milímetros(ml)</li>
     <li>pixeles (px)</li>
     <li>pulgadas (in)</li>
@@ -91,7 +93,9 @@
     <dd>block = ocupan todo el espacio a lo ancho del contenedor y generan salto de línea</dd>
     <dd>inline = ocupan el espacio segun su contenido, no generan saltos de línea, no admiten dimensiones width y
       height</dd>
-    <dd>inline-block = un intermedio entre block e inline no ocupa todo el ancho disponible y se le puede dar
+    <dd>inline-bl
+
+      ock = un intermedio entre block e inline no ocupa todo el ancho disponible y se le puede dar
       dimensiones width y height</dd>
     <dd>none = oculta el elemento, por lo que no ocupara ningun espacio. solo oculta no se borra el elemento</dd>
     <dd>flex = cajas flexibles ideal para maquetar componentes, es unidemensional se trabaja solo con 1 columna o 1
@@ -100,7 +104,9 @@
 
     <h2>Video 3</h2>
 
+
     <dt>10- Propiedad display en css</dt>
+    <dd>El display va a marcar como se van a comportar los elementos en el documento</dd>
     <dd>block = ocupan todo el espacio a lo ancho del contenedor y generan salto de línea</dd>
     <dd>inline = ocupan el espacio segun su contenido, no generan saltos de línea, no admiten dimensiones width y
       height</dd>
@@ -117,7 +123,7 @@
       <li>Relative = ocupa su espacio en el documento, el elemento es posicionado relativo a su posicion normal, y con
         las propiedades top , right, bottom, left podemos moverlo, al moverlo el elemento conseva su espacio reservado
       </li>
-      <li>Absolule = se posiciona respecto al ancestro mas cercano que tambien este posicionado, si no hay ninguno toma
+      <li>Absolute = se posiciona respecto al ancestro mas cercano que tambien este posicionado, si no hay ninguno toma
         al viewport como referencia, pierde su espacio en el flujo del documento y los elementos posicionados absolute
         pueden moverse y superponerse sobre otros elementos</li>
       <li>Fixed= el elemento se posiciona en forma fija y respecto al viewport, y ojo que puede tapar otros elementos,
